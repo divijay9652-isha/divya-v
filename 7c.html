@@ -1,0 +1,51 @@
+<html>
+<body>
+<script>
+    var a =[10,20,30,40,50,60];
+    document.write(a + "<br>");          
+    
+    a.push(70);
+    document.write(a + "<br>");        
+    
+    a.pop();
+    document.write(a + "<br>");        
+    
+    a.unshift(3);
+    document.write(a + "<br>");        
+    
+    a.shift();
+    document.write(a + "<br>");          
+    
+    a.splice(3);
+    document.write(a + "<br>");          
+    
+    a.reverse();
+    document.write(a + "<br>");          
+    
+    a.sort((a, b) => a - b);
+    document.write(a + "<br>");          
+    
+    let joined = a.join('-');
+    document.write(joined + "<br>");     
+    
+    let newArr = a.concat([35, 40]);
+    document.write(newArr + "<br>");    
+    
+    
+    document.write( + a.indexOf(20) + "<br>");
+    
+    document.write(a.includes(15) + "<br>");
+    
+    
+    let found = a.find(x => x > 20);
+    document.write( found + "<br>");
+
+    let filtered = a.filter(x => x < 20);
+    document.write( filtered + "<br>");
+
+    let mapped = a.map(x => x * 2);
+    document.write( mapped + "<br>");
+
+</script>
+</body>
+</html>

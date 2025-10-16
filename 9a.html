@@ -1,0 +1,18 @@
+<html>
+<head>
+<script>
+         var n =parseInt(prompt(n));
+         function fact(n){
+              if (n === 0 || n === 1) 
+              return 1;
+              else{
+              for (let i = 2; i <= n; i++) {
+              fact *= i;
+              }
+              return fact;
+              } 
+</script>        
+</head>
+<body onload="fact()">
+</body>
+</html>

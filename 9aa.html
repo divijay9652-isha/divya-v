@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+         var n = parseInt(prompt("Enter a number"));
+         function fact(n){
+              if (n === 0 || n === 1) 
+                  return 1;
+              else{
+                  var fact = 1;
+                  for (var i = 2; i <= n; i++) {
+                      fact *= i;
+                  }
+                  return fact;
+              } 
+         }
+         document.write(fact(n));
+</script>        
+</head>
+<body>
+<onload="fact(n);">
+
+</body>
+</html>
